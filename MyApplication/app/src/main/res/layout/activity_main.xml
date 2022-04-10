@@ -6,23 +6,32 @@
     android:layout_height="match_parent"
     tools:context=".views.MainActivity">
 
+    <Button
+        android:id="@+id/navigate_to_secndary_activity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:text="Navigate to secondary activity" />
+
     <EditText
         android:id="@+id/left_edit_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_below="@id/navigate_to_secndary_activity"
         android:layout_alignParentLeft="true"
-        android:gravity="center"
         android:ems="9"
-        android:saveEnabled="false"/>
+        android:gravity="center"
+        android:saveEnabled="false" />
 
     <EditText
         android:id="@+id/right_edit_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_below="@id/navigate_to_secndary_activity"
         android:layout_alignParentRight="true"
-        android:gravity="center"
         android:ems="9"
-        android:saveEnabled="false"/>
+        android:gravity="center"
+        android:saveEnabled="false" />
 
     <Button
         android:id="@+id/left_button"
